@@ -1,0 +1,13 @@
+{
+    "Minimize": "최소화",
+    "Maximize": "최대화",
+    "Restore Down": "Niveau inf.",
+    "Close": "닫기",
+    "Home": "홈",
+    "Monday to Saturday": "월요일 ~ 토요일",
+    "transExample": "본 예시는 다음 위치에서 찾으세요 <0>github.com{{variable}}</0>",
+    "Update v{{ v }} available": "새로운 업데이트 v{{ v }} 버전이 있습니다",
+    "Install update and relaunch": "설치 후 재시작",
+    "Installing update v{{ v }}": "v{{ v }} 버전을 설치 중입니다",
+    "Will relaunch afterwards": "다시 시작할 겁니다."
+}

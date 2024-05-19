@@ -2,16 +2,16 @@
     "tauri": {
         "windows": [
             {
-                "title": "tauri.windows.conf.json > tauri > windows > title",
+                "title": "eeFunction Desktop App",
                 "label": "main",
-                "minWidth": 1000,
-                "minHeight": 600,
+                "minWidth": 600,
+                "minHeight": 850,
                 "resizable": true,
                 "fullscreen": false,
                 "visible": false,
                 "decorations": false,
                 "alwaysOnTop": false
-              }
+            }
         ]
     }
 }

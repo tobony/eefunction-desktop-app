@@ -17,7 +17,7 @@ function toggleFullscreen() {
     appWindow.isFullscreen().then(x => appWindow.setFullscreen(!x));
 }
 
-export default function ExampleView() {
+export default function ExampleGasView() {
     const { t } = useTranslation();
     const { fileSep, documents, downloads } = useTauriContext();
     // store-plugin will create necessary directories
@@ -26,7 +26,7 @@ export default function ExampleView() {
     const { use: useKVP, loading, data } = createStorage(storeName);
     const [exampleData, setExampleData] = useKVP('exampleKey', '');
 
-    useMinWidth(1000);
+    useMinWidth(750);
 
     // fs example
     async function createFile() {
@@ -46,7 +46,7 @@ export default function ExampleView() {
     }
     // <> is an alias for <React.Fragment>
     return !loading && <>
-        <Text>{t('Modern Desktop App Examples')}</Text>
+        <Text>{t('Modern Desktop App Gas Examples')}</Text>
         <Space h='lg' />
         <Button onClick={createFile}>Do something with fs</Button>
         <Space />

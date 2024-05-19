@@ -20,7 +20,8 @@ import LanguageHeaders from './components/LanguageHeaders';
 import { ScrollToTop } from './components/ScrollToTop';
 import { RUNNING_IN_TAURI, useTauriContext } from './tauri/TauriProvider';
 // imported views need to be added to the `views` list variable
-import ExampleView from './views/ExampleView';
+import SteamTable from './views/SteamTable';
+import ExampleGas from './views/ExampleGas';
 // fallback for React Suspense
 // import Home from './Views/Home';
 // import About from './Views/About';
@@ -40,7 +41,8 @@ export default function () {
     //     { component: React.memo(About), path: '/about', name: t('About') },
     // Suspense example when a component was lazy loaded
     //     { component: () => <React.Suspense fallback={<Fallback />}><Setting /></React.Suspense>, path: '/settings', name: t('Settings') },
-    { component: ExampleView, path: '/example-view', name: t('ExampleView') },
+    { component: SteamTable, path: '/example-view', name: t('SteamTable') },
+    { component: ExampleGas, path: '/example-view', name: t('ExampleGas') },
   ];
 
   const { toggleColorScheme } = useMantineColorScheme();
@@ -197,18 +199,18 @@ export default function () {
           </AppShellSection>
         </AppShellNavbar>
 
-        <AppShellAside className={classes.titleBarAdjustedHeight} p='md' width={{ sm: 200, lg: 300 }}>
+        {/* <AppShellAside className={classes.titleBarAdjustedHeight} p='md' width={{ sm: 200, lg: 300 }}>
           <Text>Right Side. Use for help, support, quick action menu? For example, if we were building a trading app, we could use the aside for the trade parameters while leaving the main UI with the data</Text>
-        </AppShellAside>
+        </AppShellAside> */}
 
-        {showFooter &&
+        {/* {showFooter &&
           <AppShellFooter p='md' className={classes.footer}>
             {footerText}
             <Button variant='subtle' size='xs' onClick={() => setFootersSeen(prev => ({ ...prev, [FOOTER]: '' }))}>
               <ImCross />
             </Button>
           </AppShellFooter>
-        }
+        } */}
       </AppShell>
     </SimpleBar>
   </>;

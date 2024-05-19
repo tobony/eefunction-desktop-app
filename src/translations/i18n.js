@@ -3,6 +3,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import en from './en.json'
 import fr from './fr.json'
+import ko from './ko.json'
 
 export const defaultLng = 'en';
 // this is exported in order to avoid hard coding supported languages in more than 1 place
@@ -10,9 +11,12 @@ const resources = {
   en: {
     translations: en
   },
-  fr: {
-    translations: fr
-  }
+  ko: {
+    translations: ko
+  },
+  // fr: {
+  //   translations: fr
+  // },
 }
 
 i18n

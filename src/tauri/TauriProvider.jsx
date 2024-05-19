@@ -80,7 +80,7 @@ export function TauriProvider({ children }) {
         // if you aren't using the window-state plugin,
         //  you need to manually show the window (uncomment code)
         // import { invoke } from '@tauri-apps/api';
-        // invoke('show_main_window');
+        invoke('show_main_window');
         // Why? The default background color of webview is white
         //  so we should show the window when the react app loads
         // See: https://github.com/tauri-apps/tauri/issues/1564

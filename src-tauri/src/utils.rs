@@ -81,7 +81,7 @@ pub fn show_item_in_folder(path: String) -> Result<(), String> {
 #[tauri::command]
 pub fn show_main_window(window: tauri::Window) {
   // replace "main" by the name of your window
-  window.get_window("main").unwrap().show().unwrap();
+  window.get_window("eeFunction Desktop App").unwrap().show().unwrap();
 }
 
 #[derive(Clone, Serialize)]
